@@ -1,0 +1,15 @@
+{
+  "name": "ethers-advanced-storage-fcc",
+  "version": "1.0.0",
+  "description": "Deploy and interact with an advanced storage contract using ethers.js",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "ethers": "^5.0.0",
+    "prettier": "^2.5.1",
+    "solc": "0.8.7-fixed"
+  },
+  "scripts": {
+    "compile": "solcjs --bin --abi --include-path node_modules/ --base-path . -o . AdvancedStorage.sol",
+    "deploy": "node deploy.js"
+  }
+}
