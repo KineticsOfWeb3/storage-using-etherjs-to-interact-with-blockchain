@@ -18,7 +18,7 @@ describe("AdvancedStorage", function () {
       .to.emit(advancedStorage, "ItemAdded")
       .withArgs("Item 1", 100);
   });
-
+// lfg
   it("Should update total supply and emit an event", async function () {
     await expect(advancedStorage.updateTotalSupply(1000))
       .to.emit(advancedStorage, "TotalSupplyUpdated")
